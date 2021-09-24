@@ -1,0 +1,13 @@
+<nb-card class="own-scroll">
+    <nb-card-header>
+      Own scroll
+    </nb-card-header>
+    <nb-list
+      nbInfiniteList
+      [threshold]="500"
+      (bottomThreshold)="null">
+      <nb-list-item *ngFor="let newsPost of firstCard.news">
+      </nb-list-item>
+     
+    </nb-list>
+  </nb-card>
